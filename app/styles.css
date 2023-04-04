@@ -1,0 +1,202 @@
+/* Add a background color to the chat screen */
+body {
+font-family: 'Roboto', sans-serif;
+background: #f2f2f2;
+}
+
+.header-logo-container {
+width: 100%;
+text-align: center;
+}
+
+.credits {
+color: #333333;
+margin-top: 15px;
+font-size: 12px;
+}
+
+.credits a {
+color: #333333;
+text-decoration: none;
+}
+
+#loading {
+font-size: 50px;
+}
+
+/* Style the chat box */
+.chat {
+margin: 0 auto;
+width: 600px;
+max-width: 100%;
+background-color: #ffffff;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+max-height: calc(100vh - 250px);
+height: calc(100vh - 250px);
+}
+
+.credits {
+width: 100%;
+text-align: center;
+}
+
+/* Style the chat box header */
+.chat-header {
+background-color: #f2f2f2;
+color: #333333;
+padding: 16px;
+font-size: 20px;
+font-weight: bold;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+border-bottom: 1px solid #e6e6e6;
+}
+
+/* Style the chat box body */
+.chat-body {
+padding: 16px;
+overflow-y: auto;
+height: calc(100% - 145px);
+}
+
+/* Style the chat messages */
+.chat-body .message,
+.chat-body .response {
+margin-bottom: 16px;
+padding: 8px 16px;
+border-radius: 8px;
+}
+
+/* Style the user's messages */
+.chat-body .message {
+background-color: #e6e6e6;
+color: #333333;
+}
+
+/* Style the chatbot's responses */
+.chat-body .response {
+background-color: #f2f2f2;
+color: #333333;
+text-align: right;
+}
+
+/* Style the chat box footer */
+.chat-footer {
+bottom: 0;
+position: relative;
+display: flex;
+align-items: center;
+background-color: #f2f2f2;
+border-top: 1px solid #e6e6e6;
+padding: 8px 16px;
+}
+
+/* Style the input field */
+.chat-footer input[type="text"] {
+flex: 1;
+padding: 8px;
+border: 1px solid #e6e6e6;
+border-radius: 8px;
+font-size: 16px;
+outline: none;
+background-color: #ffffff;
+}
+
+/* Style the button */
+.chat-footer button {
+margin-left: 8px;
+padding: 8px 16px;
+background-color: #0084ff;
+color: #ffffff;
+font-size: 16px;
+font-weight: bold;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}
+  
+/* Add some hover effects to the button */
+.chat-footer button:hover {
+  background-color: #0073e6;
+}
+
+.chat-footer button:active {
+  background-color: #005bbf;
+}
+
+/* Media query for mobile devices */
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+  .chat {
+    width: 100%;
+    height: calc(100vh - 80px);
+  }
+
+  .chat-header {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .chat-body {
+    padding: 12px;
+    height: calc(100% - 130px);
+  }
+
+  .chat-footer {
+    padding: 8px;
+  }
+
+  .chat-footer input[type="text"] {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .chat-footer button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+.loading-animation {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+.loading-animation::after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-left: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
