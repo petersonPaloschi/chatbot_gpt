@@ -183,8 +183,6 @@ function clean_message(message)
     .replace(/Resposta/gm, '')
     .trim();
 
-  message = message
-
   if (message.startsWith(',') || message.startsWith('?')) 
   {
     message = message.substring(1);
