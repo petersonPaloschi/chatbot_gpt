@@ -37,3 +37,6 @@ git clone https://github.com/petersonPaloschi/chatbot_gpt.git
 ```bash
 -> http://localhost:3000
 ```
+3. UI:
+
+![](https://files.catbox.moe/yt3l5v.PNG)
