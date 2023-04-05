@@ -21,7 +21,7 @@ git clone https://github.com/petersonPaloschi/chatbot_gpt.git
 4. Insira a API Key na .env:
 
 ```bash
--> API_TOKEN = "SUA CHAVE"
+-> API_TOKEN = "SUA chave de api da openai"
 ```
 
 
