@@ -18,7 +18,14 @@ git clone https://github.com/petersonPaloschi/chatbot_gpt.git
 -> npm install
 ```
 
-4. Inicie o projeto:
+4. Insira a API Key na .env:
+
+```bash
+-> API_TOKEN = "SUA CHAVE"
+```
+
+
+5. Inicie o projeto:
 
 ```bash
 -> node .
